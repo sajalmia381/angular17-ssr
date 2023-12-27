@@ -1,0 +1,14 @@
+## Use Node Slim image
+FROM node:18-slim
+
+## Container Working path 
+WORKDIR /app
+
+## Copy builded code
+COPY /dist /dist
+
+## Expose container port
+EXPOSE 8000
+
+## Start the application
+CMD [ "node", "app/dist/angular17-ssr/server/server.mjs" ]

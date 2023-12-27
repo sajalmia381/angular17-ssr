@@ -1,0 +1,14 @@
+.dockerignore
+
+Dockerfile
+node_modules
+.git
+.vscode
+.idea
+.angular
+
+dump
+docker-compose
+docker-compose.*
+
+DEPLOYMENT.md
